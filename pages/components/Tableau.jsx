@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import Link from "next/link";
 import React, { useContext } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -57,13 +58,13 @@ const tableau = (props) => {
           </th>
         </tr>
       </tfoot>
-      <tbody>
+      {/* <tbody>
         {entries.map(({ Name, Age, Country, Zip }, data))}
         <th>{Name}</th>
         <th>{Country}</th>
         <th>{Zip}</th>
         <th>{Age}</th>
-      </tbody>
+      </tbody> */}
     </table>
   );
 };
